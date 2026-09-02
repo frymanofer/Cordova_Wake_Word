@@ -1,0 +1,40 @@
+{
+  "name": "cordova-wake-word-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cordova example app for on-device wake word detection with cordova-wake-word.",
+  "scripts": {
+    "sync": "cordova prepare",
+    "build:android": "cordova build android --debug",
+    "build:ios": "cordova build ios --debug --emulator",
+    "run:android": "cordova run android",
+    "run:ios": "cordova run ios"
+  },
+  "keywords": [
+    "cordova",
+    "wake word",
+    "wake-word",
+    "hotword",
+    "keyword detection",
+    "example"
+  ],
+  "author": "DaVoice.io",
+  "license": "MIT",
+  "devDependencies": {
+    "cordova": "13.0.0",
+    "cordova-android": "15.1.0",
+    "cordova-ios": "8.1.1",
+    "cordova-wake-word": "^0.1.2"
+  },
+  "cordova": {
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "plugins": {
+      "cordova-wake-word": {
+        "MICROPHONE_USAGE_DESCRIPTION": "Use the microphone for on-device wake word detection."
+      }
+    }
+  }
+}

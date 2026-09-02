@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Cordova Wake Word Example</title>
+</head>
+<body>
+    <main class="card">
+        <p class="eyebrow">DaVoice.io</p>
+        <h1>Cordova Wake Word</h1>
+        <p>This app creates and destroys a native wake word detector to verify the plugin installation.</p>
+        <p id="status" class="status" role="status">Waiting for Cordova…</p>
+        <p class="settings">Threshold: 0.99 · Buffer count: 2</p>
+    </main>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
