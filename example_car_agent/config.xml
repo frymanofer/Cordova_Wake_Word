@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="io.davoice.caragent.cordova" version="1.0.0"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>DaVoice: AI Car Voice Agent</name>
+    <description>On-device voice assistant for a simulated car: wake word, speaker verification, speech to text, an on-device agent and text to speech (DaVoice).</description>
+    <author email="info@davoice.io" href="https://davoice.io">DaVoice.io</author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <!-- ONNX Runtime 1.31 (wake word, speech) needs iOS 15.1; the on-device LLM needs Android 8.0 (API 26). -->
+    <preference name="deployment-target" value="15.1" />
+    <preference name="android-minSdkVersion" value="26" />
+    <!-- iOS speech recognition reads its word lists (car words, "Hey DaVoice") from the app bundle; Android does not use them. -->
+    <platform name="ios">
+        <resource-file src="src/stt_bias_conf/words_flattened.txt" target="words_flattened.txt" />
+        <resource-file src="src/stt_bias_conf/words_flattened.pt-BR.txt" target="words_flattened.pt-BR.txt" />
+    </platform>
+</widget>
