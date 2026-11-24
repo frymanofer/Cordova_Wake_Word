@@ -24,7 +24,7 @@
     "cordova": "13.0.0",
     "cordova-android": "15.1.0",
     "cordova-ios": "8.1.1",
-    "cordova-wake-word": "^0.1.2"
+    "cordova-wake-word": "^0.2.0"
   },
   "cordova": {
     "platforms": [

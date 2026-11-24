@@ -8,4 +8,6 @@
     <content src="index.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    <!-- The plugin's ONNX Runtime pod (DaVoiceOnnxRuntime 1.31.0) needs iOS 15.1. -->
+    <preference name="deployment-target" value="15.1" />
 </widget>
