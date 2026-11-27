@@ -19,13 +19,16 @@
     "cordova": "13.0.0",
     "cordova-android": "15.1.0",
     "cordova-ios": "8.1.1",
-    "cordova-speech": "^0.1.0",
-    "cordova-voice2voice": "^0.1.0",
-    "cordova-wake-word": "^0.2.0",
+    "cordova-speech": "^0.1.1",
+    "cordova-voice2voice": "^0.1.2",
+    "cordova-wake-word": "^0.2.3",
     "esbuild": "0.24.2"
   },
   "cordova": {
-    "platforms": ["android", "ios"],
+    "platforms": [
+      "android",
+      "ios"
+    ],
     "plugins": {
       "cordova-wake-word": {
         "MICROPHONE_USAGE_DESCRIPTION": "The car agent listens for the wake word and your voice commands."
